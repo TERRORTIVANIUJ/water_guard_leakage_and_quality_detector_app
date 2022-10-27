@@ -6,4 +6,4 @@ flask_app.secret_key="123"
 
 from app import routes
 
-import tkinter
+# import tkinter
