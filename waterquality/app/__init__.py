@@ -6,6 +6,6 @@ flask_app.secret_key="123"
 
 from app import routes
 
-import _tkinter as tk
+import _tkinter as TK
 
-print(tk.__file__)
+print(TK.__file__)
