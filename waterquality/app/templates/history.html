@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Gaurd Inc. - History</title>
+    <link rel="icon" href="../static/images/mp/icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <style>
+        .header-history {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .history,
+        .back {
+            flex-basis: 45%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .history h3,
+        .back a {
+            color: #000;
+        }
+
+        .history a:hover,
+        .back a:hover {
+            color: #ff0000;
+        }
+
+        .back {
+            margin-top: 15px;
+            text-align: right;
+        }
+
+        table {
+            width: 80%;
+            border: 10px;
+            margin: auto;
+
+        }
+
+        tr,
+        td {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<!-- HISTORY PAGE -->
+
+<body>
+
+    <div class="header-history">
+        <div class="history">
+            <h3>History</h3>
+        </div>
+        <div class="back">
+            <strong><a href="/main"> Back</a>
+        </div>
+    </div>
+    <div>
+        <form action="/predict" method="post">
+        <table border="2">
+            <tr>
+                <td>ph</td>
+                <td>temp</td>
+                <td>turbidity</td>
+                <td>hardness</td>
+                <td>day</td>
+                <td>time</td>
+                <td>flow rate</td>
+                <td>water pressure</td>
+                <td>leak</td>
+                <td>quality</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

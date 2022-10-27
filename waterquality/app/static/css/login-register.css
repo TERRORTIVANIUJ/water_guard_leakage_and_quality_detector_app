@@ -1,0 +1,81 @@
+/* ------------------------- LOGIN & REGISTER PAGE CSS --------------------------- */
+
+* {
+    color: #fff;
+    font-family: 'Poppins', sans-serif !important; 
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2eaafa, rgba(0, 0, 50, 0.5), #7f6fea), url(../images/lp/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
+
+.heading {
+    margin: 40px auto 0;
+    height: auto;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Kaushan Script', cursive !important;
+}
+
+.heading img {
+    width: 300px;
+    margin-bottom: 35px;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: none !important;
+    width: 100% !important;
+    height: 35px !important;
+    display: block !important;
+    margin: 5px auto !important;
+}
+
+.form-control::placeholder {
+    color: #ffffff4d !important;
+}
+
+.form-control:focus {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.btn-success:hover {
+    background: #28a745 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background: #007bff !important;
+    color: #fff !important;
+}
+
+.form-control:focus::placeholder {
+    color: #000 !important;
+}
+
+.btn-success {
+    margin: 30px auto 0 !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: none !important;
+    /* display: block !important; */
+}
+
+.btn-primary{
+    width: auto !important;
+    margin: 10px auto 0 !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: none !important;
+    /* display: block !important; */
+}
+

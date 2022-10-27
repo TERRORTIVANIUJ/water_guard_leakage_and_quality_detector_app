@@ -1,0 +1,380 @@
+/* ------------------------- WATER GAURD APPICATION PAGE CSS --------------------------- */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(#2eaafa, rgba(0, 0, 0, 0.3), #7f6fea), url(../images/mp/banner.jpg);
+    backdrop-filter: blur(5px);
+    padding: 0;
+    margin: 0;
+    font-size: 1.125rem;
+    color: #000;
+}
+
+.btn-top {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.history,
+.logout {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.history a,
+.logout a {
+    color: #fff;
+}
+
+.history a:hover,
+.logout a:hover {
+    color: #ffffff80;
+}
+
+.logout {
+    text-align: right;
+}
+
+.head {
+    margin: 30px auto 0;
+    height: auto;
+}
+
+.head img {
+    width: 200px;
+    margin-bottom: 35px;
+    position: relative;
+    left: 550px;
+}
+
+/* --------------------------------------------------------------------- */
+
+@media screen and (max-width: 1400px) {
+    .head img {
+        left: 460px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .head img {
+        left: 380px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .head img {
+        left: 260px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head img {
+        left: 170px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .head img {
+        left: 150px;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+
+.container {
+    color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 40px;
+    margin: 0 0 1rem;
+    border-left: 2px solid #137dc5;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+mark {
+    background-color: rgba(225, 224, 0, 0.7);
+}
+
+a:hover {
+    color: #fff;
+}
+
+.heading {
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+span {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bolder !important;
+}
+
+@media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1080px;
+    }
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    padding-right: 100%;
+    padding-left: 100%;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.blue-bg {
+    background-color: #b2b2ff;
+}
+
+.secondary-bg {
+    background-color: #fafafa;
+}
+
+.purple-bg-secondary {
+    background-color: #d8b2d8;
+}
+
+.purple-bg {
+    background-color: #fff;
+}
+
+.btn-primary {
+    border-style: solid;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    box-shadow: rgb(0 0 0 / 30%) 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: transparent;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border-color: transparent;
+    background: #ffc107 !important;
+    color: #000 !important;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.blue-bg-secondary {
+    background-color: #ccccff;
+}
+
+.button-no-style {
+    border: 0;
+}
+
+.display-3 {
+    font-size: 72px;
+}
+
+.link-unstyled {
+    color: inherit;
+}
+
+.marker-highlight {
+    border-radius: 1em 0 1em 0;
+    background-image: linear-gradient(-100deg, rgba(225, 224, 0, 0.3), rgba(225, 224, 0, 0.7) 95%, rgba(225, 224, 0, 0.1))
+}
+
+.border-top-purple {
+    border-top: 1px solid #fff !important;
+}
+
+.navbar-light {
+    background-color: #fff;
+}
+
+.navbar li {
+    transition: 0.5s;
+    margin: 0 8px 0 0;
+    font-weight: 600;
+}
+
+.navbar li:hover {
+    background-color: #fff;
+    border-radius: 0.375rem;
+}
+
+.container>.main-content {
+    margin-top: 5rem;
+}
+
+.main-content {
+    margin-top: 2rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.border-black {
+    border: 1px solid #000;
+}
+
+.border-purple {
+    border: 2.5px dashed #fff;
+}
+
+.border-purple-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-link {
+    color: #fff;
+    text-decoration: underline;
+}
