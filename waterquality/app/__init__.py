@@ -9,3 +9,5 @@ from app import routes
 import _tkinter
 
 # import tkinter
+
+# web: cd waterquality && gunicorn run:flask_app
