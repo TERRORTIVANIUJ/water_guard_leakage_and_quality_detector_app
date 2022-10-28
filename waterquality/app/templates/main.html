@@ -155,6 +155,69 @@
             fr = document.getElementById('fr').value;
             wp = document.getElementById('wp').value;
 
+            // output display on history page
+
+            function prediction1() {
+                let leakD = 'leak';
+                let qualityD = 'BAD';
+
+                $.ajax(
+                    {
+                        type: "GET",
+                        dataType: "jsonp",
+                        url: `https://water-monitor-database.herokuapp.com/api/pipeline_dataset/history/store?ph=${ph}&temp=${temp}&turb=${turbidity}&hard=${hardness}&valve=${500}&day=${day}&time=${time}&flow=${fr}&water=${wp}&leakD=${leakD}&qualityD=${qualityD}`,
+                        success: function (status) {
+                            console.log(status)
+                        }
+                    }
+                )
+            };
+            function prediction2() {
+                let leakD = 'No leak';
+                let qualityD = 'BAD';
+
+                $.ajax(
+                    {
+                        type: "GET",
+                        dataType: "jsonp",
+                        url: `https://water-monitor-database.herokuapp.com/api/pipeline_dataset/history/store?ph=${ph}&temp=${temp}&turb=${turbidity}&hard=${hardness}&valve=${500}&day=${day}&time=${time}&flow=${fr}&water=${wp}&leakD=${leakD}&qualityD=${qualityD}`,
+                        success: function (status) {
+                            console.log(status)
+                        }
+                    }
+                )
+            };
+            function prediction3() {
+                let leakD = 'leak';
+                let qualityD = 'GOOD';
+
+                $.ajax(
+                    {
+                        type: "GET",
+                        dataType: "jsonp",
+                        url: `https://water-monitor-database.herokuapp.com/api/pipeline_dataset/history/store?ph=${ph}&temp=${temp}&turb=${turbidity}&hard=${hardness}&valve=${500}&day=${day}&time=${time}&flow=${fr}&water=${wp}&leakD=${leakD}&qualityD=${qualityD}`,
+                        success: function (status) {
+                            console.log(status)
+                        }
+                    }
+                )
+            };
+            function prediction4() {
+                let leakD = 'No leak';
+                let qualityD = 'GOOD';
+
+                $.ajax(
+                    {
+                        type: "GET",
+                        dataType: "jsonp",
+                        url: `https://water-monitor-database.herokuapp.com/api/pipeline_dataset/history/store?ph=${ph}&temp=${temp}&turb=${turbidity}&hard=${hardness}&valve=${500}&day=${day}&time=${time}&flow=${fr}&water=${wp}&leakD=${leakD}&qualityD=${qualityD}`,
+                        success: function (status) {
+                            console.log(status)
+                        }
+                    }
+                )
+            };
+
             // GET route of the predicted insertions
 
             $.ajax(

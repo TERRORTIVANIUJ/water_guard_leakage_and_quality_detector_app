@@ -1,0 +1,84 @@
+* {
+    font-family: 'Poppins', sans-serif !important; 
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(#2eaafa, rgba(0, 0, 0, 0.5), #7f6fea), url(../images/history-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-history {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.history,
+.back {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.history h1 {
+    font-family: 'Kaushan Script', cursive !important; 
+}
+
+.history h1,
+.back a {
+    color: #fff;
+}
+
+.history a:hover,
+.back a:hover {
+    color: #ff0000;
+}
+
+.back {
+    /* margin-top: 15px; */
+    text-align: right;
+}
+
+table {
+    width: 80%;
+    border: 10px;
+    margin: auto;
+    height: 10vh;
+}
+
+tr,
+td {
+    text-align: center;
+}
+
+.container {
+    right: 0 !important;
+    margin-bottom: 10px !important;
+    flex-basis: 45% !important;
+    position: fixed;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border-color: transparent;
+    background: #f62681 !important;
+    color: #fff !important;
+}
+
+.watermark-img {
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+    .watermark-img {
+        top: 25%;
+    }
+}
