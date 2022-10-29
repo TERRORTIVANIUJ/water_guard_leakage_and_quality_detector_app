@@ -8,7 +8,6 @@ from flask import request
 from flask import flash,redirect,url_for,session
 import sqlite3
 # import tkinter as tk
-
 # root = tk.Tk()
 
 # SQLite database creation
@@ -16,35 +15,6 @@ import sqlite3
 con=sqlite3.connect("database.db")
 con.execute("create table if not exists users(pid integer primary key,name text,address text,contact integer,mail text,password text)")
 con.close()
-
-# # ###############################################
-# con=sqlite3.connect("database.db")
-# con.execute("create table if not exists records(pid integer primary key,day text,time text,fr text,wp text,ph text,temp text,turbidity text,hardness text)")
-# con.close()
-# # ###############################################
-# @flask_app.route('/records',methods=['GET','POST'])
-# def records():
-#     if request.method=='POST':
-#         try:
-#             day=request.form['day']
-#             time=request.form['time']
-#             fr=request.form['fr']
-#             wp=request.form['wp']
-#             ph=request.form['ph']
-#             temp=request.form['temp']
-#             turbidity=request.form['turbidity']
-#             hardness=request.form['hardness']
-
-#             con=sqlite3.connect("database.db")
-#             cur=con.cursor()
-#             cur.execute("insert into users(day,time,fr,wp,ph,temp,turbidity,hardness)values(?,?,?,?,?,?,?,?)",(day,time,fr,wp,ph,temp,turbidity,hardness))
-#             con.commit()
-#         finally:
-#             return redirect(url_for("main"))
-#             con.close()
-
-#     return render_template('history.html')
-# # ###############################################
 
 # this is the route to the home page - default page
 

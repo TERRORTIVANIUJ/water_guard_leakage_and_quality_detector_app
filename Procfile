@@ -1,1 +1,1 @@
-web: cd waterquality && gunicorn run:flask_app
+web: cd leakagequality && gunicorn run:flask_app
