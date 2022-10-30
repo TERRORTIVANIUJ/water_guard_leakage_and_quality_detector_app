@@ -1,14 +1,24 @@
 # imports and declarations
 
 from turtle import st
-from flask import render_template, send_file
-from app import app
+
 import pickle
 from flask import request
 from flask import flash,redirect,url_for,session
 import sqlite3
+from flask import Flask ,render_template, send_file
+from flask_cors import CORS
+
+from tkinter import *
+import _tkinter
+
+app = Flask(__name__)
+CORS(app)
 # import tkinter as tk
 # root = tk.Tk()
+
+app.config['SECRET_KEY'] = 'sh...-keep-this-a-secret'
+app.secret_key="123"
 
 # SQLite database creation
 
@@ -140,5 +150,8 @@ def prediction():
     return str(pred1 + " " + pred3)
 
 # root.mainloop()
+
+if __name__ ==  '__main__':
+    app.run(debug = True)
 
 # end of our code
