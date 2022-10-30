@@ -1,3 +1,3 @@
-from app import flask_app
+from app import app
 
-flask_app.run(debug=True)
+app.run(debug=True)

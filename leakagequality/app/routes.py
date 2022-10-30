@@ -2,7 +2,7 @@
 
 from turtle import st
 from flask import render_template
-from app import flask_app
+from app import app
 import pickle
 from flask import request
 from flask import flash,redirect,url_for,session
@@ -18,17 +18,17 @@ con.close()
 
 # this is the route to the home page - default page
 
-@flask_app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def default():
     return render_template('home.html')
 
-@flask_app.route('/home', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def home():
     return render_template('home.html')
 
 # route when sign in clicked - rediracts to login page
 
-@flask_app.route('/login',methods=["GET","POST"])
+@app.route('/login',methods=["GET","POST"])
 def login():
     if request.method=='POST' and 'name' in request.form and 'password' in request.form:
         name=request.form['name']
@@ -49,7 +49,7 @@ def login():
 
 # route when sign up clicked - rediracts to register page
 
-@flask_app.route('/register',methods=['GET','POST'])
+@app.route('/register',methods=['GET','POST'])
 def register():
     if request.method=='POST':
         try:
@@ -73,20 +73,20 @@ def register():
 
 # route when log out clicked - rediracts to home page
 
-@flask_app.route('/logout')
+@app.route('/logout')
 def logout():
     session.clear()
     return redirect(url_for("home"))
 
 # route when log in is successful - navigates to main application page
 
-@flask_app.route('/main', methods=['GET', 'POST'])
+@app.route('/main', methods=['GET', 'POST'])
 def main():
     return render_template('main.html')
 
 # route when history is clicked - navigates to history page
 
-@flask_app.route('/history', methods=['GET', 'POST'])
+@app.route('/history', methods=['GET', 'POST'])
 def history():
     return render_template('history.html')
 
@@ -97,7 +97,7 @@ sc = pickle.load(open(r"sc.pkl", 'rb'))
 le = pickle.load(open(r"le.pkl", 'rb'))
 water_pressure = pickle.load(open(r"water_pressure.sav", 'rb'))
 
-@flask_app.route("/predict")
+@app.route("/predict")
 def prediction():
     ph = float(request.args.get("ph"))
     hardness = float(request.args.get("hardness"))
