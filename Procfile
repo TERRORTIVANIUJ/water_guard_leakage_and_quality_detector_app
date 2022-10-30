@@ -1,1 +1,1 @@
-web: cd leakagequality && gunicorn run:app   
+web: cd leakagequality && gunicorn -b :$PORT run:app   
