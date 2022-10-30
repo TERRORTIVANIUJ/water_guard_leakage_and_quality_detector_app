@@ -120,25 +120,25 @@ def prediction():
     pred1 = str(water_quality.predict(sc.transform([[ph, hardness, temperature, turbidity]])))
     pred3 = ""
     if day == 0:
-        generic_svm = pickle.load(open(r"../generic_svm_model_0.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_0.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     elif day == 1:
-        generic_svm = pickle.load(open(r"../generic_svm_model_1.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_1.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     elif day == 2:
-        generic_svm = pickle.load(open(r"../generic_svm_model_2.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_2.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     elif day == 3:
-        generic_svm = pickle.load(open(r"../generic_svm_model_3.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_3.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     elif day == 4:
-        generic_svm = pickle.load(open(r"../generic_svm_model_4.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_4.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     elif day == 5:
-        generic_svm = pickle.load(open(r"../generic_svm_model_5.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_5.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     elif day == 6:
-        generic_svm = pickle.load(open(r"../generic_svm_model_6.sav", 'rb'))
+        generic_svm = pickle.load(open(r"./generic_svm_model_6.sav", 'rb'))
         pred3 = float(generic_svm.predict([[time, wp]]))
     
     pred3 += 0.3
